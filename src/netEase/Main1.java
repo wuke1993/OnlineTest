@@ -1,4 +1,4 @@
-package natEase;
+package netEase;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -6,9 +6,10 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2017年3月25日 下午3:09:30
  * Title  : Main5
- * Description : 
+ * Description : https://www.nowcoder.com/discuss/22696?type=0&order=0&pos=5&page=2
+ *               赶去公司
  */
-public class Main5 {
+public class Main1 {
 
 	public static void main(String[] args) {
 		int taxiNum = 0;

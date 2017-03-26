@@ -1,13 +1,15 @@
-package natEase;
+package netEase;
 import java.util.Scanner;
 
 /**
  * @author: wuke 
  * @date  : 2017年3月25日 下午2:32:42
  * Title  : Main4
- * Description : 
+ * Description : https://www.nowcoder.com/discuss/22696?type=0&order=0&pos=5&page=2
+ *               魔力手环
+ *               测试用例通过 60% 其余超时
  */
-public class Main4 {
+public class Main3 {
 
 	public static void main(String[] args) {
 		int n = 0;
