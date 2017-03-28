@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2017年3月24日 下午6:58:21
  * Title  : Main
- * Description : reverse then add
+ * Description : reverse two positive integer then add them
  */
 public class Main {
 	public static void main(String[] args) {
@@ -25,8 +25,7 @@ public class Main {
 	    if(a < 1 || a > 70000 || b < 1 || b > 70000)
 	    	System.out.println("-1");
 	    
-	    return reverseDigit(a) + reverseDigit(b);
-	    
+	    return reverseDigit(a) + reverseDigit(b);	    
 	}
 	
 	static int reverseDigit(int n) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2017年3月24日 下午8:24:08
  * Title  : Main3
- * Description : 
+ * Description : not finished yet
  */
 public class Main3 {
 	static int[][] timeTable = {{0, 2, 10, 5, 3, 1000},
