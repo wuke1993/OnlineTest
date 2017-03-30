@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Title : Main 
  * Description : 数列前 n 项求和，第 n 项为第 n-1 项的平方根
  */
-public class Main {
+public class Main01 {
 	public static void main(String[] args) {
 		int n = 0;
 		int m = 0;

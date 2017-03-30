@@ -1,49 +1,81 @@
 package toutiao;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
  * @author: wuke 
- * @date  : 2017年3月29日 下午3:25:00
- * Title  : Main2
- * Description : 水仙花数
+ * @date  : 2017年3月30日 下午7:09:23
+ * Title  : Main4
+ * Description : 
  */
 public class Main2 {
 
 	public static void main(String[] args) {
-		int m = 0;
 		int n = 0;
-		List<Integer> arr = new ArrayList<Integer>();
+		int m = 0;
 		
 		Scanner in = new Scanner(System.in);
 		
-		int a = 0;
-		int b = 0;
-		int c = 0;
-		int temp = 0;
-		while(in.hasNext()) {
-			m = in.nextInt();
-			n = in.nextInt();
+		n = in.nextInt();
+		m = in.nextInt();
+		in.nextLine();
+		
+		String[] strs1 = new String[n];
+		for(int i = 0; i < n; i++) {
+			strs1[i] = in.nextLine();
+		}
+		
+		String[] strs2 = new String[m];
+		for(int i = 0; i < m; i++) {
+			strs2[i] = in.nextLine();
+		}		
+		
+		for(String str : strs2) 
+			System.out.println(compare(strs1, str));
+	}
+	
+	static String compare(String[] strs1, String str) {		
+		String result = null;
+		
+		ArrayList<HashSet<String>> sentence = new ArrayList<HashSet<String>>();
+		HashSet<String> temp = null;
+		String[] arr = null;
+		for(String s : strs1) {
+			temp = new HashSet<String>();
 			
-			for(int i = m; i <= n; i++) {
-				a = i % 10;
-				b = (i / 10) % 10;
-				c = i / 100;
-				temp = (int) (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
-				
-				if(temp == i)
-					arr.add(i);
-			}
+			arr = s.split(" ");
+			for(String t : arr) 
+				temp.add(t);
 			
-			if(arr.size() == 0)
-				System.out.println("no");
-			else {
-				for(Integer t : arr)
-					System.out.print(t + " ");
-				System.out.println();
+			sentence.add(temp);
+		}
+		
+		HashSet<String> hs = new HashSet<String>();
+		arr = str.split(" ");
+		for(String t : arr) 
+			hs.add(t);
+		
+		int localtion = 0;
+		int max = 0;
+		int count = 0;
+		HashSet<String> hashSet = null;
+		for(int i = 0; i < sentence.size(); i++) {
+			hashSet = sentence.get(i);
+			count = 0;
+			
+			for(String s : hs)
+				if(hashSet.contains(s)) 
+					count++;
+			if(count > max) {
+				max = count;
+				localtion = i;
 			}
 		}
+		
+		result = strs1[localtion];
+		
+		return result;
 	}
 }
