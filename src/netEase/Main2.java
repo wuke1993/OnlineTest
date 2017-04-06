@@ -6,7 +6,8 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2017年3月26日 下午2:16:30
  * Title  : Main2
- * Description : https://www.nowcoder.com/discuss/22696?type=0&order=0&pos=5&page=2
+ * Description : 不是自己做的！
+ *               https://www.nowcoder.com/discuss/22696?type=0&order=0&pos=5&page=2
  *               调整队形
  */
 public class Main2 {
