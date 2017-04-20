@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2017年3月24日 下午6:58:21
  * Title  : Main
- * Description : reverse two positive integer then add them
+ * Description : Reverse two positive integer then add them
  */
 public class Main {
 	public static void main(String[] args) {
