@@ -3,7 +3,7 @@ package alibaba;
  * @author: wuke 
  * @date  : 2017年4月26日 下午8:42:10
  * Title  : ReversePolishNotation
- * Description : 通过 40%，应该是性能问题
+ * Description : 通过 40%，问题在于只考虑了单个数字！！！
  */
 
 import java.util.ArrayList;
